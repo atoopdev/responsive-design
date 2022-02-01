@@ -1,0 +1,28 @@
+/* remove margins on typography to keep margins consistent */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 620px;
+  width: 75%;
+  min-width: 325px;
+}
+
+.columns {
+  display: flex;
+}
+
+.col {
+}
