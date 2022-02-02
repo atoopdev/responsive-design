@@ -16,6 +16,7 @@ h1 {
   color: #312614;
   font-size: 3rem;
   text-align: center;
+  padding: 0.5em;
 }
 
 h2 {
@@ -35,6 +36,11 @@ img {
 
 .columns {
   display: flex;
+  /* space between columns */
+  justify-content: space-between;
+  /* vertically shrinks container to size of contents */
+  /* use with borders and bg colors */
+  align-items: flex-start;
   margin: 1em 0;
 }
 
@@ -42,16 +48,17 @@ img {
   /* border: 1px solid green; */
 }
 
+/* must not total 100% to allow for column space between */
 .col-1 {
-  width: 25%;
+  width: 20%;
 }
 
 .col-2 {
-  width: 50%;
+  width: 45%;
 }
 
 .col-3 {
-  width: 75%;
+  width: 70%;
 }
 
 h1 span {
@@ -65,4 +72,17 @@ h1 span {
 .col-dark-background {
   background-color: #312614;
   padding: 1em;
+}
+
+/* switch cols to stack */
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
 }
