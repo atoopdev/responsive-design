@@ -1,0 +1,35 @@
+/* remove margins on typography to keep margins consistent */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.title {
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-size: 3.375rem;
+  color: #143774;
+}
+
+h2 {
+  color: #1792d2;
+}
+
+h2,
+nav {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
+}
+
+nav {
+  color: #707070;
+}
