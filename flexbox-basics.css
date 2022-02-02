@@ -7,22 +7,50 @@ p {
 }
 
 body {
+  color: #707070;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+h1 {
+  color: #312614;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 620px;
+  max-width: 980px;
   width: 75%;
   min-width: 325px;
 }
 
 .columns {
   display: flex;
+  /* border: 1px solid red; */
 }
 
 .col {
+  padding: 10px;
+  /* border: 1px solid green; */
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+.light-text {
+  color: #fff;
+}
+
+.dark-background {
+  background-color: #312614;
 }
