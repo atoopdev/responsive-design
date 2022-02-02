@@ -20,16 +20,26 @@ h1 {
   color: #143774;
 }
 
-h2 {
+.subtitle {
   color: #1792d2;
 }
 
-h2,
+.subtitle,
 nav {
   font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
 }
 
-nav {
+.nav-links {
   color: #707070;
+  text-decoration: none;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+  color: #1792d2;
+}
+
+.nav-item {
+  list-style: none;
 }
