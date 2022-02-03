@@ -23,15 +23,6 @@ header {
   max-width: 900px;
 }
 
-.col-2 {
-  width: 61%;
-  border: 1px solid red;
-}
-
-col-1 {
-  width: 28%;
-  border: 1px solid green;
-}
 .container-nav {
   display: flex;
   justify-content: space-between;
@@ -90,6 +81,10 @@ nav {
 
 .current-page:hover {
   color: #707070;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media (max-width: 675px) {
