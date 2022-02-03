@@ -9,6 +9,23 @@ p {
 body {
   font-size: 1.125rem;
   margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
@@ -17,17 +34,20 @@ body {
 
 h1 {
   font-family: "Lora", serif;
-  font-size: 3.375rem;
+  font-weight: 400;
+  font-size: 2rem;
   color: #143774;
 }
 
 .subtitle {
   color: #1792d2;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
 }
 
 .subtitle,
 nav {
-  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
 }
 
@@ -39,15 +59,41 @@ nav {
 
 .nav-item {
   list-style: none;
-  margin: 0 1em;
+  margin-left: 2em;
 }
 
 .nav-links {
   color: #707070;
   text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25em 0;
 }
 
 .nav-links:hover,
 .nav-links:focus {
   color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
 }
