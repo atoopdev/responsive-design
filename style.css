@@ -18,6 +18,10 @@ header {
   padding: 2em 0;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
@@ -43,6 +47,7 @@ h1 {
 h2 {
   color: #143774;
   font-size: 1.5rem;
+  margin: 0.5em 0;
 }
 
 .subtitle {
@@ -82,6 +87,14 @@ nav {
   color: #1792d2;
 }
 
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
 @media (max-width: 675px) {
   .container-nav {
     flex-direction: column;
@@ -97,6 +110,9 @@ nav {
   }
 }
 
+.col {
+}
+
 .col-1 {
 }
 .col-2 {
@@ -109,16 +125,9 @@ nav {
   border-top: 1px solid #717171;
 }
 
-.current-page {
-  border-bottom: 1px solid #707070;
-}
-
-.current-page:hover {
-  color: #707070;
-}
-
 img {
   max-width: 100%;
+  margin: 1em 0;
 }
 
 p a {
@@ -136,13 +145,13 @@ p a:hover {
 .small-text {
   font-size: 0.875rem;
   color: #707070;
-  /* border: 1px solid black; */
 }
 
 .continue-reading {
   color: #1792d2;
   text-transform: uppercase;
   font-size: 0.875rem;
+  margin: 1em 0;
 }
 
 .sidebar {
@@ -150,9 +159,33 @@ p a:hover {
   border: 15px solid #ebebeb;
 }
 
+.post-div {
+  border-bottom: 1px solid #707070;
+  margin-bottom: 10px;
+}
+
 footer {
   background-color: #143774;
   color: #ebebeb;
   font-family: "Ubuntu", serif;
   font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+  }
+
+  .col-2 {
+    width: 61%;
+  }
+
+  .col-1 {
+    width: 28%;
+  }
+
+  footer {
+    padding: 3em 0;
+  }
 }
