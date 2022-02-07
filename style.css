@@ -125,8 +125,22 @@ nav {
 .recent-post {
 }
 
+.recent-post-main {
+}
+
+.recent-post-secondary {
+}
+
 .past-posts {
   border-top: 1px solid #717171;
+}
+
+.post-info {
+  font-size: 0.875rem;
+  color: #707070;
+}
+
+.post-body {
 }
 
 img {
@@ -144,14 +158,6 @@ p a:hover {
 
 .all-caps {
   text-transform: uppercase;
-}
-
-.post-info {
-  font-size: 0.875rem;
-  color: #707070;
-}
-
-.post-body {
 }
 
 .continue-reading {
