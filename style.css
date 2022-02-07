@@ -114,11 +114,15 @@ nav {
 }
 
 .col-1 {
+  margin-top: 1em;
 }
 .col-2 {
 }
 
 .featured-post {
+}
+
+.recent-post {
 }
 
 .past-posts {
@@ -142,9 +146,12 @@ p a:hover {
   text-transform: uppercase;
 }
 
-.small-text {
+.post-info {
   font-size: 0.875rem;
   color: #707070;
+}
+
+.post-body {
 }
 
 .continue-reading {
