@@ -122,6 +122,7 @@ nav {
 
 img {
   max-width: 100%;
+  display: block;
   margin: 1em 0;
 }
 
@@ -214,7 +215,7 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  .container {
+  .container-flex {
     display: flex;
   }
 
