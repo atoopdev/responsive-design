@@ -73,6 +73,13 @@ h3 {
 .container-nav {
   flex-direction: column;
 }
+
+header {
+  padding: 2em;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -244,6 +251,7 @@ footer {
 
   .container-flex {
     display: flex;
+    justify-content: space-between;
   }
 
   .col-2 {
@@ -254,8 +262,30 @@ footer {
     width: 28%;
   }
 
+  .featured-post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-img {
+    order: -2;
+  }
+
+  .post-info {
+    order: -1;
+  }
+
   .recent-post {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .recent-post-main {
+    width: 67%;
+  }
+
+  .recent-post-secondary {
+    width: 30%;
   }
 
   footer {
