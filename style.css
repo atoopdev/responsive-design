@@ -17,6 +17,7 @@ body {
 header {
   background-color: #f8f8f8;
   padding: 2em 0;
+  text-align: center;
 }
 
 p {
@@ -31,6 +32,7 @@ p {
 
 .container-nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -66,6 +68,19 @@ h3 {
   font-size: 0.75rem;
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
+}
+
+.container-nav {
+  flex-direction: column;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 1em 0;
 }
 
 .subtitle,
@@ -105,25 +120,14 @@ nav {
   color: #707070;
 }
 
-@media (max-width: 675px) {
-  .container-nav {
-    flex-direction: column;
-  }
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin: 1em 0;
-  }
-}
-
 img {
   max-width: 100%;
+  /* removes spacing at bottom */
   display: block;
   margin: 1em 0;
+}
+
+.container-flex {
 }
 
 .col {
@@ -214,7 +218,16 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 750px) {
+  .container-nav {
+    flex-direction: row;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .container-flex {
     display: flex;
   }
