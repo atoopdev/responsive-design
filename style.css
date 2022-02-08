@@ -54,7 +54,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin: 0.5em 0;
+  /* margin: 0.5em 0; */
 }
 
 h3 {
@@ -144,15 +144,21 @@ img {
 }
 
 .recent-post {
+  display: flex;
+  flex-direction: column;
+
   border-bottom: 1px solid #707070;
   padding-bottom: 2em;
   margin-bottom: 2em;
 }
 
+/* swap display order so image and post info shown first */
 .recent-post-main {
+  order: 2;
 }
 
 .recent-post-secondary {
+  order: 1;
 }
 
 /* sidebar right */
@@ -246,6 +252,10 @@ footer {
 
   .col-1 {
     width: 28%;
+  }
+
+  .recent-post {
+    flex-direction: row;
   }
 
   footer {
