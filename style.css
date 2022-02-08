@@ -124,7 +124,6 @@ img {
   max-width: 100%;
   /* removes spacing at bottom */
   display: block;
-  margin: 1em 0;
 }
 
 .container-flex {
@@ -140,9 +139,14 @@ img {
 }
 
 .featured-post {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 1em;
 }
 
 .recent-post {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .recent-post-main {
@@ -151,15 +155,18 @@ img {
 .recent-post-secondary {
 }
 
+/* sidebar right */
 .past-posts {
   border-top: 1px solid #717171;
 }
 
+/* date and comment count */
 .post-info {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   color: #707070;
+  margin: 2.5em 0;
 }
 
 .post-body {
@@ -175,6 +182,7 @@ img {
   text-transform: uppercase;
   font-size: 0.875rem;
   margin: 1em 0;
+  text-decoration: none;
 }
 
 .continue-reading:hover,
