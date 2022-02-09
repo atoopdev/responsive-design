@@ -103,7 +103,7 @@ nav {
 
 .nav-item {
   list-style: none;
-  margin-left: 2em;
+  /* margin-left: 2em; */
 }
 
 .nav-links {
