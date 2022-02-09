@@ -249,6 +249,10 @@ footer {
     justify-content: space-between;
   }
 
+  .nav-item {
+    margin-left: 2em;
+  }
+
   .container-flex {
     display: flex;
     justify-content: space-between;
