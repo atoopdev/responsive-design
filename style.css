@@ -58,12 +58,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   /* margin: 0.5em 0; */
 }
 
 h3 {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
 }
 
 /* logo subtitle */
@@ -207,21 +207,6 @@ img {
   text-decoration: underline;
 }
 
-.blue-accent {
-  font-family: "Lora", serif;
-  font-weight: 700;
-  color: #1792d2;
-  font-size: 1.3125rem;
-  margin: 1em 0;
-  text-decoration: none;
-}
-
-.blue-accent:hover,
-.blue-accent:focus {
-  color: #143774;
-  text-decoration: underline;
-}
-
 .sidebar {
   color: #143774;
   border: 20px solid #ebebeb;
@@ -257,6 +242,7 @@ img {
 
 .sidebar-post-title {
   margin-top: 1em;
+  font-size: 0.85rem;
   order: 2;
 }
 
@@ -284,6 +270,37 @@ footer {
   font-weight: 400;
   text-align: center;
   padding: 3em 0;
+}
+
+/* about Me */
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-title {
+  order: 2;
+  font-family: "Lora", serif;
+}
+
+.blog-img {
+  order: 1;
+  margin-bottom: 1em;
+}
+
+.blog-main {
+  order: 3;
+  margin-bottom: 1em;
+}
+
+.blue-accent {
+  font-family: "Lora", serif;
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 1rem;
+  margin: 1em 0;
+  text-decoration: none;
 }
 
 @media (min-width: 750px) {
@@ -349,5 +366,16 @@ footer {
 
   footer {
     padding: 3em 0;
+  }
+
+  /* about me */
+
+  .blog-img {
+    width: 100%;
+    height: 250px;
+    /* crops image to fit space */
+    object-fit: cover;
+    /* object-position: left; */
+    order: -2;
   }
 }
