@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    
+
+    <title>Recent Posts</title>
     <title>Living the Simple Life</title>
 </head>
 <body>
@@ -22,9 +23,9 @@
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item "><a class="nav-links current-page" href="index.html">Home</a></li>
+                    <li class="nav-item "><a class="nav-links " href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-links" href="#">About Me</a></li>
-                    <li class="nav-item"><a class="nav-links" href="recent-posts.html">Recent Posts</a></li>
+                    <li class="nav-item current-page"><a class="nav-links" href="recent-posts.html">Recent Posts</a></li>
                 </ul>
             </nav>
     </div>
@@ -36,16 +37,23 @@
     <main role="main" class="col col-2">
         <!-- note, display content as would make logical sense without styling in case CSS ever fails to load -->
         <!-- works better with screen readers too -->
-        <article class="featured-post">
-            <h2 class="article-title">Finding simplicity in life</h2>
-        <img class="article-img" src="img/life.jpg">
-        <p class="post-info"><time datetime="2019-07-23T19:00"></time>July 23, 2019</time> | 3 comments</p>
         
-        <p class="post-body"><strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to simplify your life, <a href="#">a few of which we've explored in the past.</a> This week we're taking a bit of a approach though, in how you can find simplicity in the life you already living. </p>
+
+    <article class="recent-post">
+        <div class="recent-post-main">
+        <h2 class="article-title">Finding simplicity in life</h2>
+        
+        <p class="post-body">
+            <strong>Life can get complicated really quickly</strong>, but it doesn't have to be! There are many ways to simplify your life, <a href="#">a few of which we've explored in the past.</a> This week we're taking a bit of a approach though, in how you can find simplicity in the life you already living.
+        </p> 
         <a href="#"class="continue-reading">continue reading</a>
-
-    </article><!-- end featured post -->
-
+        </div>
+        <div class="recent-post-secondary">
+            <img class="article-img" src="img/life.jpg" alt="potted plant on desk">
+            <p class="post-info"><time datetime="2019-07-23T19:00"></time>July 23, 2019</time> | 3 comments</p>
+        </div>
+        
+    </article>
     
         <article class="recent-post">
             <div class="recent-post-main">
