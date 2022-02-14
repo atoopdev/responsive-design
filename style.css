@@ -274,7 +274,8 @@ strong {
 
 footer {
   background-color: #143774;
-  color: #ebebeb;
+  /* 50% opacity to ensure text will match if footer bg color is changed */
+  color: rgba(255, 255, 255, 0.65);
   font-family: "Ubuntu", serif;
   font-weight: 400;
   text-align: center;
