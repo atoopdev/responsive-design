@@ -12,6 +12,8 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   color: #707070;
+  /* recommended - do not go to 2*/
+  line-height: 1.6;
 }
 
 header {
@@ -73,6 +75,7 @@ h3 {
   font-size: 0.75rem;
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
 }
 
 .container-nav {
@@ -116,6 +119,7 @@ nav {
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 1px;
   padding: 0.25em 0;
 }
 
@@ -199,6 +203,8 @@ img {
   font-size: 0.875rem;
   margin: 1em 0;
   text-decoration: none;
+  /* use for small text all caps */
+  letter-spacing: 4px;
 }
 
 .continue-reading:hover,
@@ -238,12 +244,15 @@ img {
 
 .sidebar-title {
   margin-bottom: 1em;
+  line-height: 1.2;
 }
 
 .sidebar-post-title {
   margin-top: 1em;
   font-size: 0.85rem;
   order: 2;
+  font-family: "lora", serif;
+  line-height: 1.4;
 }
 
 p a {
