@@ -1,0 +1,99 @@
+html {
+  font-size: 0.9rem;
+}
+
+/* remove margins on typography to keep margins consistent */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.3125rem;
+}
+
+h3 {
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg_img {
+  text-align: center;
+}
+
+.container {
+  /* make responsive at all sizes */
+  max-width: 570px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.reg-form {
+  text-align: center;
+}
+
+.all-caps {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.small-text {
+  font-size: 0.625rem;
+}
+
+.accent-color {
+  color: #f18119;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.btn {
+}
+
+.btn:hover,
+.btn:focus {
+}
+
+@media (min-width: 750px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  body {
+    font-size: 1.125rem;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bg-img {
+    width: 60%;
+  }
+  .form-holder {
+    width: 30%;
+  }
+}
