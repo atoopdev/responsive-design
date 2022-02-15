@@ -21,6 +21,7 @@ body {
 h1 {
   font-size: 2.25rem;
   font-weight: 400;
+  color: #fff;
 }
 
 h2 {
@@ -35,6 +36,9 @@ img {
 }
 
 .bg_img {
+  background-image: url(dark-ribs.jpg);
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
