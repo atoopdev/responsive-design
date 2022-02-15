@@ -1,3 +1,8 @@
+/* takes content size, padding, and border into account when determing size of conetnt */
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 0.9rem;
 }
@@ -24,6 +29,7 @@ h1 {
   font-size: 2.25rem;
   font-weight: 300;
   color: #fff;
+  margin: 2em 0;
 }
 
 /* join us for this live webinar */
@@ -39,23 +45,35 @@ h2 {
 /* register today */
 h2 + p {
   font-weight: 900;
+  margin-bottom: 1em;
 }
 
 img {
   max-width: 100%;
 }
 
-.bg_img {
+.container {
+  /* make responsive at all sizes */
+  max-width: 920px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bg-img {
+  background-color: #404040;
   background-image: url(dark-ribs.jpg);
   background-size: cover;
   background-position: center;
+
+  padding: 0 0.5em 2em;
+
+  /* note margins do not collapse */
+  display: flex;
+  flex-direction: column;
 }
 
-.container {
-  /* make responsive at all sizes */
-  max-width: 570px;
-  width: 90%;
-  margin: 0 auto;
+.main-content {
+  padding: 2em 1em;
 }
 
 .reg-form {
@@ -65,11 +83,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.bg_img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 .top-text {
   order: -1;
   font-weight: 900;
@@ -100,6 +114,10 @@ strong {
     font-size: 3.5rem;
   }
 
+  h1 + p {
+    font-size: 1.75rem;
+  }
+
   h2 {
     font-size: 1.75rem;
   }
@@ -113,9 +131,13 @@ strong {
   }
 
   .bg-img {
-    width: 60%;
+    width: 50%;
+    min-height: 100vh;
   }
   .main-content {
-    width: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
