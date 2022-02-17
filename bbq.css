@@ -44,7 +44,7 @@ h2 {
 /* register today */
 h2 + p {
   font-weight: 900;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 img {
@@ -102,6 +102,27 @@ img {
 
 strong {
   font-weight: 900;
+}
+
+/* forms  */
+.email-collector {
+  margin-top: 1em;
+  width: 80%;
+  max-width: 300px;
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+  border: 1px solid #404040;
+}
+
+input,
+.btn {
+  width: 80%;
+  border-radius: 5px;
+  padding: 0.25em;
+  margin: 0.5em 0;
 }
 
 .btn {
