@@ -55,8 +55,9 @@ img {
 }
 
 .intro {
-  background-color: #404040;
-  background-image: url(dark-ribs.jpg);
+  background-color: #696969;
+  background-image: url(ribs.jpg);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
 
@@ -89,6 +90,11 @@ img {
 .top-text {
   order: -1;
   font-weight: 900;
+  padding-top: 2px;
+  border-top: 5px solid #f18119;
+  border-image: linear-gradient(to right, #ffa51d, #ff713b) 1;
+  /* keeps the border just over text */
+  margin: 0 auto;
 }
 
 .small-text {
