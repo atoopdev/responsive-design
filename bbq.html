@@ -21,20 +21,21 @@
                 </div>
         </div>
         <div class="main-content">
-        <div class="container">
+        <div class="container" id="maincontentEL">
             <h2>Become a BBQ master!</h2>
             <p class="all-caps accent-color">Register today</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ab velit magnam eius ea error explicabo adipisci in tempora vero.</p>
-            <form action="#" method="post">
+            <p>BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
+            <form action="#" method="post" id="email-collector">
                 
-                <input type="text" id="fname" aria-label = "first name" required placeholder="first name"><br>
+                <input type="text" name="firstName" id="fname" aria-label = "first name" required placeholder="first name"><br>
                 
-                <input type="email" id="email" aria-label = "email" required placeholder="email"><br>
+                <input type="email" name="emailAddress" id="email" aria-label = "email" required placeholder="email"><br>
                 <button type="submit" class="btn btn-gradient">Register</button>
             </form>
             <p class="small-text">We'll never share your information without your permission</p>
             </div>
         </div>
     </div>
+    <script src="bbq.js"></script>
 </body>
 </html>
